@@ -49,11 +49,32 @@ body{
     margin-bottom: 10px; /*distancia de baixo*/
     color: #fca311; /*cor do texto*/
     font-weight: bold; /*diminuir/aumentar negrito*/
+}
+
+.botao-animado{
+    text-decoration: none; /* retira a linha de link */
+    text-transform: uppercase; /* deixa letras em maisculo*/
+    border: 1px #fca311 solid; /* cria a borda */
+    border-radius: 10px; /* arredonda as bordas */
+    width: 600px; /* tamanho horizontal */
+    line-height: 50px; /* tamanho altura */
+    display: inline-block; /* permitir margin no link*/
+    margin-top: 10px; /* distancia do top*/
+    margin-bottom: 10px; /*distancia de baixo*/
+    color: #fca311; /*cor do texto*/
+    font-weight: bold; /*diminuir/aumentar negrito*/
     animation-duration: 0.5s;
     animation-name: zoom;
     animation-iteration-count: infinite;
     animation-direction: alternate;
-    animation-delay: 1s;
+}
+
+.botao-animado:hover{
+    background-color: #cf8206;
+    color: white;
+    width: 610px;
+    border-color: white;
+    box-shadow: 7px 7px 7px rgba(0, 0, 0, 0.6);
 }
 
 .botao:hover{
