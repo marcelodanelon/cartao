@@ -67,6 +67,7 @@ body{
     animation-name: zoom;
     animation-iteration-count: infinite;
     animation-direction: alternate;
+    /* animation-play-state: paused; */
 }
 
 .botao-animado:hover{
@@ -86,13 +87,12 @@ body{
 }
 
 @keyframes zoom{
-    from {
+    0%{
         width: 600px;
         height: 50px;
-      }
-    
-      to {
+    }      
+    100%{
         width: 630px;
-        height: 50px;
-      }
+        height: 50px;       
+    }
 }
